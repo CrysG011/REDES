@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de Redes</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #bca8e1;
-        }
-    </style>
 </head>
 
-<body class="mb-2 p-1 m-0">
+<body class="mb-2 p-1 m-0" style="background-color: #bca8e1;">
     <div class="container-xxl text-center">
         <div class="row p-2 bg-dark bg-opacity-50">
             <h1
@@ -78,9 +73,9 @@
             </div>
             <div class="bg-gradient align-self-center">
                 <h4 class="fw-semibold">802.1Q VLAN Tagging</h4>
-                <p class="fs-5 fw-bold">Es el tipo de VLAN más utilizada, hace uso del estándar 802.1Q para etiquetas o
+                <p class="fs-5 fw-bold">Es el tipo de VLAN más utilizada, hace uso del estándar 802.1Q para etiquetar o
                     quitar la etiqueta a las VLANs. Este estándar consiste en introducir una cabecera 802.1Q dentro de
-                    la trama Ethernet que todos conocemos, con el objetivo de diferenciar las diferentes VLANs que
+                    la trama Ethernet que todos conocemos, con el objetivo de diferenciar las VLANs que
                     tengamos configuradas. Este estándar no encapsula la trama original de Ethernet, sino que añade 4
                     bytes al encabezado Ethernet original, además, el cambio de «EtherType» se cambia al valor 0x8100
                     para señalar que se ha cambiado el formato de la trama.</p>

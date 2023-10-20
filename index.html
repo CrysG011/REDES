@@ -19,23 +19,21 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./pages/cloud.html">Computación en la nube</a>
+            <a class="nav-link active" aria-current="page" href="#sec1">Intranet-Extranet - VPNs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/redex.html">Diseño de Redes</a>
+            <a class="nav-link" href="#sec2">DHCP Snooping</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <div class="container-xxl">
     <div class="row">
       <div class="col">
         <div class="card">
           <h3 class="card-text fw-bold bg-secondary text-white text-center">INFRAESTRUCTURA</h3>
-          <img src="https://www.openup.es/wordpress-new/wp-content/uploads/2012/05/data-center-3-1024x682.jpg"
-            class="card-img-top" alt="Infraestructura">
+          <img src="./assets/redex1.webp" class="card-img-top" alt="Infraestructura">
           <div class="card-body text-center">
             <h4 class="card-text fw-bold text-primary">Aspectos clave para seleccionar equipos de red</h4>
             <ul class="list-group card-text">
@@ -58,8 +56,7 @@
       <div class="col text-center">
         <div class="card">
           <h3 class="card-text fw-bold bg-secondary text-white">CONFIGURAR una RED</h3>
-          <img src="https://wvw.conzultek.com/hubfs/arquitectura%20de%20redes.png" class="card-img-top"
-            alt="CONFIGURAR RED">
+          <img src="./assets/redex2.webp" class="card-img-top" alt="CONFIGURAR RED">
           <div class="card-body">
             <ol class="list-group list-unstyled card-text">
               <li class="list-group-item">
@@ -96,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="row text-dark">
+    <div id="sec1" class="row text-dark">
       <div class="col">
         <div class="card text-center">
           <img
@@ -141,7 +138,7 @@
         </div>
       </div>
     </div>
-    <div class="row text-black text-center">
+    <div id="sec2" class="row text-black text-center">
       <div class="col">
         <div class="card">
           <img
@@ -171,37 +168,46 @@
       </div>
     </div>
   </div>
-  <div id="carouselExampleFade" class="carousel slide carousel-fade container-sm" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/topo.png" class="d-block w-100 m-3" alt="TOPOLOGIAS">
+  <section class="container">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel container-sm">
+      <div class="carousel-inner">
+        <div class="carousel-item active data-bs-interval=" 10000">
+          <a href="./pages/redex.html">
+            <div class="carousel-caption">
+              <h5 class="fw-bold fs-3 bg-dark bg-opacity-50 rounded-circle">REQUISITOS...</h5>
+            </div>
+          </a>
+          <img src="./assets/topo.png" class="d-block w-100 p-3" alt="Diseño y segmentación de REDES">
+        </div>
+        <div class="carousel-item data-bs-interval=" 2000">
+          <a href="https://www.youtube.com/playlist?list=PLoqM5eIpDpUG3j9rPt5l-1o8puVs34fii" target="_blank">
+            <div class="carousel-caption">
+              <h5 class="fw-bold fs-3">CURSOS</h5>
+            </div>
+          </a>
+          <img src="./assets/automat.png" class="d-block w-100 p-3" alt="AUTOMATIZACIÓN DE REDES">
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/cloud.html">
+            <div class="carousel-caption">
+              <h5 class="fw-bold fs-4 bg-gradient">Auditoría de Red en la Nube</h5>
+            </div>
+          </a>
+          <img src="./assets/cloud.png" class="d-block w-100 p-3" alt="Computación en la Nube">
+        </div>
       </div>
-      <div class="carousel-item">
-        <a href="https://www.youtube.com/playlist?list=PLoqM5eIpDpUG3j9rPt5l-1o8puVs34fii" target="_blank">
-          <div class="carousel-caption">
-            <h5 class="fw-bold">CURSOS</h5>
-          </div>
-        </a>
-        <img src="./assets/automat.png" class="d-block w-100 m-3" alt="AUTOMATIZACIÓN DE REDES">
-      </div>
-      <div class="carousel-item">
-        <a href="./pages/cloud.html">
-          <div class="carousel-caption">
-            <h5 class="fw-bold">Un Vistazo Profundo a la Auditoría de Red en la Nube</h5>
-          </div>
-        </a>
-        <img src="./assets/cloud.png" class="d-block w-100 m-3" alt="Computación en la Nube">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
   <footer class="m-3 bg-white">
     <div class="row text-center align-items-center justify-content-center">
       <div class="col-lg-4">
