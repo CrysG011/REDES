@@ -5,10 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de Redes</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #bca8e1;
+        }
+    </style>
 </head>
 
-<body>
-
+<body class="mb-2 p-1 m-0">
+    <div class="container-xxl text-center">
+        <div class="row p-2 bg-dark bg-opacity-50">
+            <h1
+                class="p-1 fw-bold text-light text-decoration-underline border border-5 border-dark border-bottom-0 rounded-top">
+                Diseño de Redes</h1>
+            <p class="p-1 text-light fs-3 lh-sm border border-5 border-dark border-top-0 rounded-bottom">Proceso
+                crucial
+                para garantizar un rendimiento óptimo y una comunicación eficiente entre los dispositivos conectados.
+            </p>
+        </div>
+        <div class="row p-2 bg-dark bg-opacity-25">
+            <img src="../assets/TOPOLOGIAS.png" alt="Topologías de Red" class="img-fluid">
+            <div class="bg-gradient p-2">
+                <h2 class="fs-2 fw-semibold">TOPOLOGÍA de Red</h2>
+                <h4 class="fw-semibold p-2">Se refiere a la forma en que los dispositivos están interconectados.
+                    Existen diferentes tipos de
+                    topologías, como la topología en estrella, en bus, en anillo, en malla, entre otras. Cada topología
+                    tiene sus propias ventajas y desventajas, y la elección dependerá de las necesidades específicas de
+                    tu red.</h4>
+            </div>
+        </div>
+        <div class="row p-2 bg-dark bg-opacity-10">
+            <div class="bg-gradient p-2">
+                <h2 class="fs-2 fw-semibold">REQUISITOS de la Red</h2>
+                <h4 class="fw-semibold p-2">Antes de diseñar una red, es fundamental identificar los requisitos y
+                    objetivos de la misma. Esto incluye considerar el número de dispositivos que se conectarán, el ancho
+                    de banda requerido, la seguridad necesaria y cualquier otro factor relevante.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl text-center">
+        <div class="row p-2 bg-dark bg-opacity-50">
+            <h1
+                class="p-1 fw-bold text-light text-decoration-underline border border-5 border-dark border-bottom-0 rounded-top">
+                Segmentación de Redes</h1>
+            <p class="p-1 text-light fs-3 lh-sm border border-5 border-dark border-top-0 rounded-bottom">Es el proceso
+                de dividir una red en segmentos más pequeños o subredes. Esto se hace por varias razones, como mejorar
+                el rendimiento, aumentar la seguridad y facilitar la administración de la red.
+            </p>
+        </div>
+        <div class="row p-2 bg-dark bg-opacity-25">
+            <img src="../assets/VLAN.webp" alt="Ejemplo de segmentación de red" class="img-fluid">
+            <div class="bg-gradient p-2">
+                <h2 class="fs-2 fw-semibold">VLAN (Red de Área Local Virtual)</h2>
+                <h4 class="fw-semibold p-2">Es una red lógica que agrupa dispositivos en función de criterios
+                    específicos, como la ubicación física, el departamento o la función. Las VLAN permiten separar el
+                    tráfico de red y mejorar la seguridad y el rendimiento.</h4>
+            </div>
+            <img src="../assets/Vlan0.webp" alt="Ejemplo de redes VLAN"
+                class="img-fluid bg-light border border-dark border-5 border-opacity-75">
+            <h4 class="fw-semibold p-2">El enrutamiento es el proceso de enviar paquetes de datos entre diferentes redes
+                o subredes. Los routers son los dispositivos encargados de realizar esta función, asegurando que los
+                paquetes lleguen a su destino correcto
+            </h4>
+            <div class="bg-gradient align-self-center">
+                <h4 class="fw-semibold">Tipos de VLANs</h4>
+                <p class="fw-bold fs-5">Actualmente existen varios tipos de VLANs que podemos utilizar en los diferentes
+                    equipos, es decir, en los switches y puntos de acceso WiFi. Las diferentes VLANs que existen son las
+                    basadas en el estándar 802.1Q VLAN Tagging basado en etiquetas, las VLAN basadas en puerto, las VLAN
+                    basadas en MAC, las VLAN basadas en aplicaciones, aunque esta última no suele utilizarse
+                    habitualmente.</p>
+            </div>
+            <div class="bg-gradient align-self-center">
+                <h4 class="fw-semibold">802.1Q VLAN Tagging</h4>
+                <p class="fs-5 fw-bold">Es el tipo de VLAN más utilizada, hace uso del estándar 802.1Q para etiquetas o
+                    quitar la etiqueta a las VLANs. Este estándar consiste en introducir una cabecera 802.1Q dentro de
+                    la trama Ethernet que todos conocemos, con el objetivo de diferenciar las diferentes VLANs que
+                    tengamos configuradas. Este estándar no encapsula la trama original de Ethernet, sino que añade 4
+                    bytes al encabezado Ethernet original, además, el cambio de «EtherType» se cambia al valor 0x8100
+                    para señalar que se ha cambiado el formato de la trama.</p>
+            </div>
+        </div>
+        <div class="row bg-gradient">
+            <h2 class="fw-bold p-2">Cuando estamos usando el estándar 802.1Q y creamos las diferentes VLANs en un
+                switch, podremos
+                configurar los diferentes puertos como «tagged» o «untagged», es decir, con etiqueta o sin etiqueta.
+            </h2>
+            <div class="col align-self-center">
+                <h3 class="p-3 fw-semibold bg-dark bg-opacity-25 rounded-5"><strong>VLAN tagged</strong>: en las tramas
+                    Ethernet se incorpora el «tag» del VLAN ID que hayamos configurado, este
+                    tipo de VLANs son entendidas por todos los switches, por los puntos de acceso WiFi profesionales y
+                    por los routers. Se pueden configurar en modo «tagged» una o más VLANs en un determinado puerto. En
+                    los enlaces troncales (desde un router a un switch, de switch a switch y de switch a AP) se suelen
+                    configurar siempre como «tagged» para «enviarles» todas las VLANs.</h3>
+            </div>
+            <div class="col align-self-center">
+                <h3 class="p-3 fw-semibold bg-dark bg-opacity-25 rounded-5"><strong>VLAN untagged</strong>: en las
+                    tramas
+                    Ethernet se retira el tag que hayamos configurado, este tipo de VLANs
+                    son entendidas por todos los dispositivos, pero principalmente se utilizan de cara a los equipos
+                    finales como ordenadores, portátiles, impresoras, cámaras IP y otro tipo de dispositivo. En un
+                    puerto en concreto solamente podremos configurar una VLAN como «untagged», no podemos poner dos
+                    VLANs como «untagged» porque el equipo final no «entendería» nada.</h3>
+            </div>
+        </div>
+        <div
+            class="row m-2 justify-content-center align-items-center border border-dark border-3 border-opacity-75 rounded-3">
+            <div class="col">
+                <img src="../assets/GNS3.webp" class="img-fluid" title="Graphic Network Simulation"
+                    alt="GNS3 (Simulación gráfica de redes)">
+            </div>
+            <div class="col">
+                <h3 class="fw-semibold p-4">GNS3 es una herramienta popular utilizada para simular y emular redes.
+                    Permite
+                    crear topologías de red virtuales y probar configuraciones sin necesidad de hardware físico.</h3>
+            </div>
+            <ul class="p-2 row fs-4 list-unstyled gap-3 bg-gradient">
+                <li class="fw-semibold"><strong>Emulación de Dispositivos: </strong>GNS3 permite emular una amplia gama
+                    de dispositivos
+                    de red, como routers, switches y firewalls. Esto te permite probar y configurar tu red virtual antes
+                    de implementarla en un entorno real.</li>
+                <li class="fw-semibold"><strong>Interconexión de Dispositivos: </strong>Con GNS3, puedes conectar
+                    dispositivos virtuales
+                    y simular el tráfico de red entre ellos. Esto te permite probar la conectividad y el rendimiento de
+                    tu red antes de implementarla.</li>
+                <li class="fw-semibold"><strong>Integración con Herramientas de Análisis: </strong>GNS3 se puede
+                    integrar
+                    con
+                    herramientas de análisis de red, como Wireshark, para monitorear y analizar el tráfico de red en
+                    tiempo real.</li>
+            </ul>
+        </div>
+        <footer class="bg-gradient m-3 p-3 rounded-3">
+            <div class="row text-center align-items-center justify-content-center">
+                <h6 class="fw-bold lg-1 border border-3 p-3 rounded-3">Recuerda que el diseño y la segmentación de redes
+                    pueden
+                    ser
+                    temas complejos y
+                    en constante evolución. Siempre es recomendable mantenerse actualizado con las últimas tendencias y
+                    mejores prácticas en el campo de las redes.
+                </h6>
+                <div class="col">
+                    <p class="fw-bold fs-6 p-2 rounded-3">Consulta la documentación oficial de
+                        fabricantes...
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.mercadoit.com/blog/analisis-opinion-it/las-10-empresas-mas-potentes-en-redes-empresariales/"
+                            target="_blank"><button type="button" class="btn btn-outline-dark">Las 10 Empresas más
+                                potentes en REDES</button></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="../assets/CGlogo.png" class="img-fluid w-50 p-3" alt="Mi Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="d-flex justify-content-center">
+                        <a href="../index.html"><button type="button" class="btn btn-outline-danger">Volver al
+                                INICIO</button></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
