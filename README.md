@@ -1,5 +1,9 @@
 # Proyecto de Redes
+
+![Páginas del sitio](./assets/RedesDiseSeg.png)
+
 ## Objetivos:
+
 - Aprender tecnologías como Bootstrap y GitLab
 - Crear un Blog en donde resumo mi ruta de aprendizaje autodidacta en una guía de estudios que puede ayudar a otras personas interesadas en el campo de las Telecomunicaciones.
 
