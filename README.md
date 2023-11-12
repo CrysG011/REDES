@@ -1,6 +1,7 @@
 # Proyecto de Redes
 
 ![Páginas del sitio](./assets/RedesDiseSeg.png)
+[Click aquí para VER el sitio](https://redesinfo.netlify.app/)
 
 ## Objetivos:
 
